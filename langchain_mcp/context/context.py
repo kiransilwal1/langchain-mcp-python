@@ -1,8 +1,8 @@
 from langchain_ollama.llms import OllamaLLM
 
-from context_builder import ContextBuilder
-from directory_reader import DirectoryFileReader
-from vector import DocumentVectorizer
+from langchain_mcp.context.context_builder import ContextBuilder
+from langchain_mcp.readers.directory_reader import DirectoryFileReader
+from langchain_mcp.vector_store.vector import DocumentVectorizer
 
 # 1. Setup components
 reader = DirectoryFileReader(

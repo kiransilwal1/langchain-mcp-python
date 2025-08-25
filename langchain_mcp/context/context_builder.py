@@ -1,8 +1,8 @@
 from typing import Callable, Any
 from langchain_core.documents import Document
 
-from directory_reader import DirectoryFileReader
-from vector import DocumentVectorizer
+from langchain_mcp.readers.directory_reader import DirectoryFileReader
+from langchain_mcp.vector_store.vector import DocumentVectorizer
 
 
 class ContextBuilder:

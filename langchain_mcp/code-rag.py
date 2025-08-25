@@ -4,7 +4,7 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_ollama.llms import OllamaLLM
 
 
-from vector import DocumentVectorizer
+from langchain_mcp.vector_store.vector import DocumentVectorizer
 
 model = OllamaLLM(model="qwen2.5-coder:7b")
 

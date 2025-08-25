@@ -186,3 +186,14 @@ class DirectoryFileReader:
         except Exception as e:
             # Handle other errors during directory traversal
             print(f"Error traversing directory {current_dir}: {str(e)}")
+
+    def get_file_list(self) -> List[str]:
+        """
+        Get a list of absolute file paths that match the specified file extensions.
+
+        Returns:
+            List of absolute file paths
+        """
+        result = {}
+        self._traverse_directory(self.directory, result, current_depth=0)
+        return list(result.keys())

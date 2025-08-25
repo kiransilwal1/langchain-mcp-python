@@ -3,3 +3,5 @@ data
 ollama-mcp-ts
 testdir
 __pycache__
+*.db
+*.sqlite3

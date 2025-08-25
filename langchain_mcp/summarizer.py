@@ -4,8 +4,8 @@ import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
 
-from directory_reader import DirectoryFileReader
-from vector import DocumentVectorizer
+from langchain_mcp.readers.directory_reader import DirectoryFileReader
+from langchain_mcp.vector_store.vector import DocumentVectorizer
 
 # Use your existing classes
 # from directory_file_reader import DirectoryFileReader
